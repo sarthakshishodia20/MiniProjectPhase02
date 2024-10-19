@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        img {
+            height: 50px;
+            width: 120%;
+        }
+        .navbar {
+            background-color: #020202; 
+            border-bottom: 4px solid white;
+            /* border-top:4px solid white; */
+        }
+        .navbar a {
+            color: white; 
+            font-weight: bold;
+        }
+        .navbar {
+            background-color: #020202; /* Dark background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Light black shadow */
+        }
+        .navbar-nav {
+            margin-left: auto; 
+        }
+        .navbar-nav .nav-link {
+            margin-left: 30px;
+            font-weight: bold; 
+        }
+        .dropdown-menu {
+            background-color: black;
+        }
+        .navbar-nav .nav-item {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav .nav-item:first-child .nav-link {
+            margin-left: 0;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            border-radius: 30px;
+            border: none;
+            padding: 5px;
+            margin-left: 10px;
+            width: 200px;
+        }
+        .search-bar .search-icon {
+            color: white;
+            font-size: 16px;
+        }
+        .badge-custom {
+            background-color: orange; 
+            color: white; 
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="/listings"><img src="/uploads/Zaika.jpg" alt="Zaika"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/listings">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Offers <span class="badge badge-custom">New</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Above 10%</a>
+                        <a class="dropdown-item" href="#">Above 30%</a>
+                        <a class="dropdown-item" href="#">Above 50%</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search your favorite">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>

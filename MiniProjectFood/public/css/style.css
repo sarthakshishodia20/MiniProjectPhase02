@@ -1,0 +1,25 @@
+
+nav a{
+    color: white;
+}
+/* Cards Images Index Page */
+
+.card{
+    height: 100px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.container01 {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
