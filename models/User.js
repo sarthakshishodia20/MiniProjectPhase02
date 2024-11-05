@@ -15,7 +15,7 @@ const userSchema = new Schema({
     },
     type: {
         type: String,
-        enum: ['owner', 'customer'],
+        enum: ['author', 'reader'],
         required: true
     }
 });
@@ -23,4 +23,4 @@ userSchema.plugin(passportLocalMongoose, { usernameField: 'email' });
 
 const User = mongoose.model("User", userSchema);
 
-module.exports = User; // Export the User model
+module.exports = User; 
